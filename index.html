@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="minimum-scale=1, initial-scale=1,
+    width=device-width, shrink-to-fit=no"
+    />
+    <title>Product App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="nav-bar"></div>
+
+    <div id="app">
+      <div class="product">
+        <div class="product-image">
+          <img v-bind:src="image" />
+        </div>
+
+        <div class="product-info">
+          <h1>{{ product }}</h1>
+          <p>{{ description }}</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
